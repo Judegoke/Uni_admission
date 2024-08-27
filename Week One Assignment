@@ -1,0 +1,34 @@
+
+def calculate_statistics(numbers):
+    if len(numbers) == 0:
+        return "The list is empty."
+
+    total_sum = sum(numbers)
+    average = total_sum / len(numbers)
+    minimum = min(numbers)
+    maximum = max(numbers)
+
+    return {
+        'sum': total_sum,
+        'average': average,
+        'min': minimum,
+        'max': maximum
+    }
+
+
+numbers = [10, 20, 30, 40, 50]
+stats = calculate_statistics(numbers)
+print("Sum:", stats['sum'])
+print("Average:", stats['average'])
+print("Min:", stats['min'])
+print("Max:", stats['max'])
+
+
+def convert_integer_to_float(number):
+    return float(number)
+
+
+integer_value = 10
+float_value = convert_integer_to_float(integer_value)
+print("Integer:", integer_value)
+print("Float:", float_value)
